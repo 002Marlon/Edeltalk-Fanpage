@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/static/PapaL.webp">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edeltalk searchengine</title>
+</head>
+<body>
+    <h1>Edeltalk searchengine</h1>
+    <form method="POST">
+        <label for="search_term">Search for a word:</label>
+        <input type="text" id="search_term" name="search_term" value="{{ search_term }}">
+        <button type="submit">Search</button>
+    </form>
+    {% if results %}
+    <h2>Results</h2>
+    <p> "{{ search_term }}" was found {{ word_count }} times.</p>
+    <ul>
+        {% for result in results %}
+        <li>
+            {{ result.filename }} (at {{ result.start_time }}s)
+            <div class="embed">
+                {{ result.video_url}}
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No results for "{{ search_term }}" found.</p>
+    {% endif %}
+</body>
+</html>

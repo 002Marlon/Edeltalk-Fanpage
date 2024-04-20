@@ -1,0 +1,44 @@
+body {
+    margin: 0 auto;
+    max-width: 900px;
+    background-color: #ebecef;
+  }
+
+h1 {
+  font-size: 2em;
+  font-family: Arial, sans-serif;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+h2 {
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-family: Arial;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: Arial;
+}
+
+form {
+  font-family: Arial;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.embed {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+ul {
+    text-align: center;
+    font-family: Arial;
+    list-style-type: none;
+}

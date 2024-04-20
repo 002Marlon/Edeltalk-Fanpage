@@ -1,1 +1,2 @@
-# Edeltalk-Fanpage
+# Edeltalk.fun
+Fanpage for Edeltalk Podcast
